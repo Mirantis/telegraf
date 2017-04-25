@@ -99,7 +99,7 @@ func (p *Procstat) addMetrics(proc Process, acc telegraf.Accumulator) {
 		prefix = p.Prefix + "_"
 	}
 
-	fields := map[string]interface{}{}
+	fields := map[string]interface{}{prefix + "running": 1}
 
 	//If process_name tag is not already set, set to actual name
 	if _, nameInTags := proc.Tags()["process_name"]; !nameInTags {
