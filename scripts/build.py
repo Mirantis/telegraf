@@ -90,7 +90,7 @@ supported_builds = {
 }
 
 supported_packages = {
-    "linux": [ "deb", "rpm", "tar" ],
+    "linux": [ "deb" ],
     "windows": [ "zip" ],
     "freebsd": [ "tar" ]
 }
